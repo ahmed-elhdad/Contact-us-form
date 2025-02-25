@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/normlize.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="container rad-6 ">
+            <h2>contact us</h2>
+            <div class="main-valid rad-6 d-none"></div>
+            <div class="name">
+                <div class="first-name">
+                    <label for="first-name-input">first name <span>*</span></label>
+                    <input class="input rad-6" type="text" name="first-name-input">
+                </div>
+                <div class="last-name">
+                    <label for="last-name-input">last name <span>*</span></label>
+                    <input class="input rad-6" type="text" name="last-name-input">
+                </div>
+            </div>
+            <div class="email-address">
+                <label for="email-address-input">email address <span>*</span></label>
+                <input class="input rad-6" type="text" name="email-address-input">
+            </div>
+            <div class="query-type">
+                <label for="">query type <span>*</span></label>
+                <div class="inputs">
+                    <div class="general-enquiry input rad-6" >
+                        <button class="btn-check" type="checkbox" name="query-type-input"></button>
+                        <label for="query-type-input">query type</label>
+                    </div>
+                    <div class="support-request input rad-6">
+                        <button class="btn-check" type="checkbox" name="support-request-input"></button>
+                        <label for="support-request-input">support request</label>
+                    </div>
+                </div>
+            </div>
+            <div class="messege">
+                <label for="messege-input">messege <span>*</span></label>
+                <input class="rad-6" type="text" name="messege-input">
+            </div>
+            <div class="consents">
+                <button class="btn-check btn" type="checkbox"></button>
+                <p>i consents to being contacted by the team <span>*</span></p>
+            </div>
+            <button class="rad-6 btn-sub" type="button">submit</button>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="js/all.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

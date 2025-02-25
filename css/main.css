@@ -1,0 +1,199 @@
+:root {
+  --Grey-500-medium: hsl(186, 15%, 59%);
+  --Green-200-lighter: hsl(148, 38%, 91%);
+  --Green-600-medium: hsl(169, 82%, 27%);
+  --Red: hsl(0, 66%, 54%);
+  --White: hsl(0, 0%, 100%);
+  --Grey-900-darker: hsl(187, 24%, 22%);
+  --Font-size-labels: 16px;
+}
+
+body {
+  background-color: var(--Green-200-lighter);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body .container {
+  background-color: white;
+  width: 590px;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  text-transform: capitalize;
+  flex-direction: column;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+body .container h2 {
+  font-size: 25px;
+}
+body .container label {
+  font-size: var(--Font-size-labels);
+  padding-bottom: 20px;
+}
+body .container label span {
+  color: var(--Green-600-medium);
+}
+body .container .name {
+  display: flex;
+  gap: 10px;
+}
+body .container .name input {
+  width: 93%;
+  padding: 0 10px;
+  letter-spacing: 1px;
+  height: 35px;
+}
+body .container .email-address {
+  width: 100%;
+}
+body .container .email-address input {
+  width: 100%;
+  height: 35px;
+}
+body .container .query-type {
+  display: flex;
+  flex-direction: column;
+}
+body .container .query-type > label {
+  font-size: 16px;
+}
+body .container .query-type .inputs {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  gap: 10px;
+}
+body .container .query-type .inputs div {
+  gap: 10px;
+  width: 90%;
+  height: 35px;
+  display: flex;
+}
+body .container .query-type .inputs div label {
+  position: relative;
+  top: 8px;
+}
+body .container .messege {
+  display: flex;
+  flex-direction: column;
+}
+body .container .messege label {
+  font-size: var(--Font-size-labels);
+  margin-bottom: 0;
+  padding-bottom: 5px;
+}
+body .container .messege input {
+  height: 100px;
+  border: 2px solid var(--Grey-500-medium);
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  outline: none;
+}
+body .container .consents {
+  display: flex;
+}
+body .container .consents p span {
+  color: var(--Green-600-medium);
+}
+body .container .consents input {
+  margin-right: 10px;
+}
+body .container .btn-sub {
+  height: 40px;
+  width: 100%;
+  background-color: var(--Green-600-medium);
+  border: 1px solid var(--Green-600-medium);
+  font-size: 20px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+body .input {
+  border: 2px solid var(--Grey-500-medium);
+}
+body .input:focus, body .input:hover {
+  outline: var(--Green-600-medium);
+  border: 2px solid var(--Green-600-medium);
+}
+body .rad-6 {
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+body .btn-check {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  margin-right: 10px;
+}
+body .btn {
+  top: 16px;
+  margin-left: -8px;
+}
+body .valid {
+  color: var(--Red);
+  font-size: 17px;
+  text-transform: capitalize;
+  padding: 5px;
+}
+@keyframes changeBackgroundColor {
+  0% {
+    background-color: hsla(0, 66%, 54%, 0.315);
+  }
+  25% {
+    background-color: hsla(0, 66%, 54%, 0.46);
+  }
+  50% {
+    background-color: hsla(0, 66%, 54%, 0.6);
+  }
+  100% {
+    background-color: hsla(0, 66%, 54%, 0.82);
+  }
+}
+@keyframes alerticon {
+  0% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+body .main-valid {
+  background-color: hsla(0, 66%, 54%, 0.37);
+  height: 60px;
+  display: flex;
+  width: 80%;
+  position: relative;
+  animation: changeBackgroundColor 1s ease-in-out infinite alternate;
+  -webkit-animation: changeBackgroundColor 1s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+body .main-valid span {
+  color: black;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: sans-serif;
+  position: relative;
+  top: 30%;
+  left: 10px;
+}
+body .main-valid svg {
+  position: relative;
+  top: 30%;
+  left: 10px;
+  animation: alerticon 1s ease-in-out infinite alternate;
+  -webkit-animation: alerticon 1s ease-in-out infinite alternate;
+  transform-origin: bottom;
+  color: var(--Red);
+}
+body .d-none {
+  display: none;
+}/*# sourceMappingURL=main.css.map */
